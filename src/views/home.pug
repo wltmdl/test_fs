@@ -1,0 +1,6 @@
+extends layout
+block content
+  form(action="/read" method="post" enctype="multipart/form-data")
+    input(type="file" id="fileID" name="getFile" value="파일" accept=".txt")
+
+    input(type="submit" value="convert")
